@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <section class="section pb-5">
+      <div class="container mt-4">
+        <h2 class="text-center">Pitsa buyurtma qilish</h2>
+
+        <div class="row">
+          <!-- Left side -->
+          <div class="col col-12 col-md-8 col-lg-4 mt-4 left-div">
+            <!-- action="https://echo.htmlacademy.ru" id="form-id" method="POST" -->
+            <form class="js-form">
+              <fieldset>
+                <legend class="fw-bold mb-2">Dough thickness</legend>
+                <select
+                  class="js-select form-select"
+                  aria-label="Default select example"
+                  name="Bread-thinkness"
+                ></select>
+              </fieldset>
+
+              <fieldset class="mt-4">
+                <legend class="fw-bold mb-2">Size</legend>
+                <div class="js-radios"></div>
+              </fieldset>
+
+              <fieldset class="mt-4">
+                <legend class="fw-bold mb-2">On Pizza</legend>
+                <div class="js-checkboxes row pleft"></div>
+              </fieldset>
+
+              <fieldset class="mt-4">
+                <legend class="fw-bold mb-2">Add</legend>
+                <div class="js-checkboxes-adds row pleft"></div>
+              </fieldset>
+            </form>
+          </div>
+          <!-- Left side -->
+
+          <div class="d-md-none mt-5 bg-dark hr-line"></div>
+
+          <!-- Right side -->
+          <div class="col col-12 col-md-4 col-lg-4 mt-4 mt-md-4 right-div">
+            <p class="fw-bold">
+              Dough Thickness: <span class="js-bread-type fw-normal"></span>
+            </p>
+            <p class="fw-bold">
+              Size: <span class="js-bread-size fw-normal">25sm</span>
+            </p>
+            <p class="fw-bold mb-0">On Pizza:</p>
+            <ul class="js-top-list"></ul>
+            <p class="fw-bold mb-0">Add:</p>
+            <ul class="js-adds-list"></ul>
+
+            <button class="btn btn-danger js-calculate" type="submit">
+              Buyurtma berish
+            </button>
+          </div>
+          <!-- Right side -->
+
+          <div class="col col-12 col-md-4 col-lg-4 mt-4 mt-md-4 third-div">
+            
+            <div class="contentofresult">
+              <p>Total:</p>
+              <span class="js-total-cost"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
